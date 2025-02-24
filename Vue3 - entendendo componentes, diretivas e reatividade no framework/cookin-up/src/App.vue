@@ -1,14 +1,17 @@
 <template>
   <Banner />
+  <ConteudoPrincipal />
 </template>
 
 
 <script lang="ts">
-  import { defineComponent } from 'vue';
+
   import Banner from './components/Banner.vue';
-  export default defineComponent({
+  import ConteudoPrincipal from './components/ConteudoPrincipal.vue';
+  export default {
     components: {
-      Banner
+      Banner,
+      ConteudoPrincipal
     }
-  })
+  }
 </script>
